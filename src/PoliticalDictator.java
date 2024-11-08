@@ -10,7 +10,7 @@ public class PoliticalDictator extends Leader implements PowerActions {
 
     @Override
     public String printDetails() {
-        return ("\nThis is " + getPartyRank() + " " + getLeaderName() + ", age " + getLeaderAge() + ", they are considered a political dictator" + "\n" + getLeaderName() + " has been leading the " + getPartyName() + " 'party' of " + getCountry() + " for " + getYearsInPower() + " years.");
+        return ("\nThis is " + getPartyRank() + " " + getLeaderName() + ", age " + getLeaderAge() + ", they are considered a political dictator" + "\n" + getLeaderName() + " has been leading the " + getPartyName() + " of " + getCountry() + " for " + getYearsInPower() + " years.");
     }
 
     @Override
