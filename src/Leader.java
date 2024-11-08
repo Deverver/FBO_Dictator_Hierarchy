@@ -5,15 +5,14 @@ public abstract class Leader {
     private String country;
 
 
-
     abstract String giveSpeech();
 
     public String printDetails() {
-        return ("This leader is named " + getLeaderName() + ", they are " + getLeaderAge() + " years old." + "\n" + getLeaderName() + " has ruled over " +getCountry() + " for " + getYearsInPower() + " years");
+        return ("This leader is named " + getLeaderName() + ", they are " + getLeaderAge() + " years old." + "\n" + getLeaderName() + " has ruled over " + getCountry() + " for " + getYearsInPower() + " years");
     }
 
     // Constructor
-    public Leader(String leaderName, int leaderAge, int yearsInPower, String country){
+    public Leader(String leaderName, int leaderAge, int yearsInPower, String country) {
         this.leaderName = leaderName;
         this.leaderAge = leaderAge;
         this.yearsInPower = yearsInPower;
@@ -37,7 +36,6 @@ public abstract class Leader {
     public String getCountry() {
         return country;
     }
-
 
 
 }

@@ -15,22 +15,22 @@ public class PoliticalDictator extends Leader implements PowerActions {
 
     @Override
     String giveSpeech() {
-        return (getLeaderName() + " wants the " + getPartyName() + " to create more wealth for the rich!");
+        return (getLeaderName() + " gives a speech! they want the " + getPartyName() + " to create more wealth for the rich!");
     }
 
     @Override
     public String implementPolicy(String policy) {
-        return ("");
+        return (getLeaderName() + " of the " + getPartyName() + " is implementing a new policy: " + policy);
     }
 
     @Override
     public String repressOpposition() {
-        return ("");
+        return (getLeaderName() + " is repressing the opposition by political campaigns");
     }
 
     @Override
     public String holdParade() {
-        return ("");
+        return ("Dictator " + getPartyRank() + " " + getLeaderName() + " of the " + getPartyName() + " is holding a parade!");
     }
 
     public String getPartyName() {

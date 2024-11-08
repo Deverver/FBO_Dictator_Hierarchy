@@ -22,22 +22,19 @@ public class DictatorSimulator {
         //endregion
 
         for (Leader leader : leadersList) {
+            String leaderPolicy = "Legal smear campaigns!";
             PowerActions leaderAction = (PowerActions) leader;
 
 
             System.out.println(leader.printDetails());
-            leader.giveSpeech();
-            leaderAction.holdParade();
-            //((PowerActions) leader).holdParade();
-
-            if (leader instanceof MilitaryDictator){
-                System.out.println(leaderAction.implementPolicy("Military doctrine 2.0!"));
+            System.out.println(" ");
+            System.out.println(leaderAction.holdParade());
+            System.out.println(leader.giveSpeech());
+            if (leader instanceof MilitaryDictator) {
+                leaderPolicy = "Military doctrine 2.0!";
             }
-            else if (leader instanceof PoliticalDictator){
-                System.out.println(leaderAction.implementPolicy("Legal smear campaigns!"));
-            }
+            System.out.println(leaderAction.implementPolicy(leaderPolicy));
             System.out.println(leaderAction.repressOpposition());
-
             System.out.print("----------------------------------------------------------------------------------------------------------------------");
         }
 

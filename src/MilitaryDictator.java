@@ -13,25 +13,24 @@ public class MilitaryDictator extends Leader implements PowerActions {
     }
 
 
-
     @Override
     String giveSpeech() {
-        return (getLeaderName() + " is giving a speech about the military might of " + getCountry() + "!");
+        return (getLeaderName() + " is giving a speech about the military dominance of " + getCountry() + "!");
     }
 
     @Override
     public String implementPolicy(String policy) {
-        return (getMilitaryRank()+ " " + getLeaderName() + " is implementing a military policy: " + policy);
+        return (getMilitaryRank() + " " + getLeaderName() + " is implementing a military policy: " + policy);
     }
 
     @Override
     public String repressOpposition() {
-        return ("");
+        return (getLeaderName() + " is repressing the opposition with a display of military might!");
     }
 
     @Override
     public String holdParade() {
-        return ("");
+        return ("Dictator " + getMilitaryRank() + " " + getLeaderName() + " is holding a parade!");
     }
 
     public String getMilitaryRank() {
