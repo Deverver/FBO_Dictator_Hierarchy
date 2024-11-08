@@ -23,6 +23,9 @@ public class DictatorSimulator {
 
         for (Leader leader : leadersList) {
             String leaderPolicy = "Legal smear campaigns!";
+            if (leader instanceof MilitaryDictator) {
+                leaderPolicy = "Military doctrine 2.0!";
+            }
             PowerActions leaderAction = (PowerActions) leader;
 
 
@@ -30,9 +33,6 @@ public class DictatorSimulator {
             System.out.println(" ");
             System.out.println(leaderAction.holdParade());
             System.out.println(leader.giveSpeech());
-            if (leader instanceof MilitaryDictator) {
-                leaderPolicy = "Military doctrine 2.0!";
-            }
             System.out.println(leaderAction.implementPolicy(leaderPolicy));
             System.out.println(leaderAction.repressOpposition());
             System.out.print("----------------------------------------------------------------------------------------------------------------------");
