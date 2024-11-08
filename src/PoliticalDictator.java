@@ -49,3 +49,4 @@ public class PoliticalDictator extends Leader implements PowerActions {
         this.partyRank = partyRank;
     }
 }
+

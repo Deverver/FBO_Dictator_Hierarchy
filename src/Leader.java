@@ -19,7 +19,6 @@ public abstract class Leader {
         this.country = country;
     }
 
-
     // Gets
     public String getLeaderName() {
         return leaderName;

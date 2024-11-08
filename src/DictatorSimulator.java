@@ -40,4 +40,5 @@ public class DictatorSimulator {
 
 
     }// main End
+
 }// Main End
